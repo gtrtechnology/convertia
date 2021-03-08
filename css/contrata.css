@@ -14,3 +14,15 @@
     width: 19px;
     height: 19px;
 }
+
+.style-card{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+    opacity: 1;
+}
+
+.header-card{
+    background-color: #0063BC;
+    color: #fff;
+    border-radius: 23px 23px 0px 0px;
+}
