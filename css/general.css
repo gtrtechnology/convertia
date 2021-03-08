@@ -1,0 +1,53 @@
+.letter-blue{
+    color: #0063BC;
+}
+
+.icon-chat{
+    position: fixed;
+    right: 30px;
+    bottom: 0;
+    width: 5em;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+
+.chat-box{
+    position: fixed;
+    right: 20px;
+    bottom: 100px;
+    width: 400px;
+    height: 80vh;
+    background: linear-gradient(90deg, rgba(184,183,208,1) 0%, rgba(231,231,236,0.18671218487394958) 100%, rgba(0,212,255,1) 100%);
+    z-index: 1000;
+    transition: all 0.3s ease-out;
+    transform: scaleY(0);
+}
+
+.chat-box.active{
+    transform: scaleY(1);
+}
+
+.hidden{
+    display: none !important;
+}
+
+.conv-form-wrapper textarea{
+    height: 30px;
+    overflow: hidden;
+    resize: none;
+}
+
+#messages{
+    padding: 20px;
+}
+
+.x-button{
+    position: fixed;
+    right: 30px;
+    top: 0;
+    cursor: pointer;
+    z-index: 1000;
+    background-color: #fff;
+
+}

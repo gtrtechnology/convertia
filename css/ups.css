@@ -1,0 +1,9 @@
+.bg-ups{
+    background: url(/src/img/bg-ups/edu-lauton-TyQ-0lPp6e4-unsplash.png) no-repeat; 
+    background-position: top;
+    height: 100vh;
+}
+
+.nav-blue{
+    background-color: #0063BC;
+}

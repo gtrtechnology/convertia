@@ -1,0 +1,42 @@
+.bg-contrata{
+    background: url(/src/img/bg-contrata-hoy/brooke-cagle-g1Kr4Ozfoac-unsplash@2x.png) no-repeat;
+    background-position: top;
+    height: 100vh;
+}
+
+.btn-contrata{
+    background: #0063BC 0% 0% no-repeat padding-box;
+    border: 3px solid #FFF;
+    color: #FFF;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+h1.brand{
+    width: 450px;
+    color: #0063BC;
+    background-color: white;
+    text-align: left;
+}
+
+@media (max-width: 600px) {
+    h1.brand{
+        width: auto;
+    }
+  }
+
+
+.bg-cliente{
+    background: url(/src/img/bg-eres-cliente/rayul-_M6gy9oHgII-unsplash@2x.png) no-repeat; 
+    background-position: top;
+    height: 100vh;
+}
+
+.btn-cliente{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 4px solid #FF6A00;
+    color: #FF6A00;
+    border-radius: 4px;
+    opacity: 1;
+
+}

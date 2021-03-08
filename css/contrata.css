@@ -1,0 +1,16 @@
+.bg-jump{
+    background: url(/src/img/bg-contrata-hoy/jump/drew-graham-PVyhz0wmHdo-unsplash.png) no-repeat; 
+    background-position: bottom;
+    height: 100vh;
+}
+
+.bg-qwerty{
+    background: url(/src/img/bg-contrata-hoy/qwerty/nordwood-themes-bJjsKbToY34-unsplash.png) no-repeat; 
+    background-position: bottom;
+    height: 8em;
+    zoom: 1.1;
+}
+.more{
+    width: 19px;
+    height: 19px;
+}
