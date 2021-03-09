@@ -1,7 +1,6 @@
 .bg-jump{
     background: url(/src/img/bg-contrata-hoy/jump/drew-graham-PVyhz0wmHdo-unsplash.png) no-repeat; 
     background-position: bottom;
-    height: 100vh;
 }
 
 .bg-qwerty{
@@ -11,8 +10,8 @@
     zoom: 1.1;
 }
 .more{
-    width: 19px;
-    height: 19px;
+    width: 13px;
+    height: 13px;
 }
 
 .style-card{
@@ -25,4 +24,30 @@
     background-color: #0063BC;
     color: #fff;
     border-radius: 23px 23px 0px 0px;
+}
+
+@media screen and (max-width: 992px) {
+    .bg-jump{
+        background: url(/src/img/bg-contrata-hoy/jump/drew-graham-PVyhz0wmHdo-unsplash.png) no-repeat; 
+        background-position: top;
+    }
+  }
+
+.btn-position{
+    position: relative;
+    bottom: -3em;
+    cursor: pointer;
+    z-index: 1000;
+    border-radius: 100%;
+}  
+
+@media screen and (max-width: 992px) {
+    .btn-position{
+        position: relative;
+        bottom: -3em;
+        cursor: pointer;
+        z-index: 1000;
+        border-radius: 100%;
+        left: -10px;
+    }
 }

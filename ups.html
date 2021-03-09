@@ -9,25 +9,132 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="/css/general.css">
-    <link rel="stylesheet" href="/css/header-footer.css">
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/ups.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/ups.css">
+    <link rel="stylesheet" href="css/contrata.css">
+    <link rel="stylesheet" href="css/convform.css">
   </head>
   <body>
-    <header class="bg-white shadow-sm">
-        <div class="d-flex justify-content-between align-items-center container p-3">
-            <a href="#">
-                <img class="call mw-100" src="/src/img/header/call.svg" alt="">
-            </a>
-            <a href="/">
-                <img class="logo mw-100" src="/src/img/header/logo-megacable-b.svg" alt="">
-            </a>
-            <a href="#">
-                <img class="mw-100" src="/src/img/header/marker.svg" alt="">
-            </a>
+      <!-- Cahat-bot -->
+      <div>
+        <img class="icon-chat" src="src/img/chat-bot/chat-box.svg" alt="">
+    </div>
+
+    <div class="chat-box">
+        <div class="conv-form-wrapper">
+          <form action="" method="GET" class="hidden">
+              <select name="programmer" data-conv-question="Hola, ¿en qué podemos ayudarte?">
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+              </select>
+              <div data-conv-fork="programmer">
+                  <div data-conv-case="yes">
+                       <input type="text" data-conv-question="A fellow programmer! Cool." data-no-answer="true">
+                  </div>
+                  <div data-conv-case="no">
+                      <select name="thought" data-conv-question="Have you ever thought about learning? Programming is fun!">
+                          <option value="yes">Yes</option>
+                          <option value="no">No..</option>
+                      </select>
+                  </div>
+              </div>
+            </form>
         </div>
-    </header>
+    </div>
+    <!-- Cahat-bot end-->
+  <header class="bg-white shadow-sm">
+      <div class="d-flex justify-content-between align-items-center container pt-3 pb-3">
+          <!-- Button trigger modal -->
+          <a type="button" class="btn" data-toggle="modal" data-target="#exampleModalCenter">
+              <img class="call mw-100" src="src/img/header/call.svg" alt="">
+          </a>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header border-bottom-0">
+                          <button type="button" class="close x-button" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                          <div class="dhx-w100 pb-4 px-4 text-center mc-form-container mc-pop-form mt-3">
+                              <h1 class="mc-text-blue text center">INIGUALABLE</h1>
+                              <h3 class="mc-text-blue text-center mb-1 mt-4">
+                                  TV INTERACTIVA + TELEFONÍA FIJA A UN PRECIO INCREÍBLE
+                              </h3>
+                              </p>
+                              <form action="" method="post" class="dhx-w75 mc-form form-box m-auto" id="form_c2c_0" data-ic-form="form_c2c_0" novalidate="novalidate">
+                                  <div class="form-group mb-4">
+                                      <label class="pop-label mc-text-blue mb-0"><strong>Ingresa tu número de teléfono</strong></label>
+                                      <small id="phoneHelp" class="pop-aclarations mc-text-blue mc-aclarations d-block text-center mb-2">Si es celular sin 044 o 045.</small>
+                                      <input type="tel" data-ic-form-field="phone" id="phone-input-popup" name="phone-input" class="input form-control" aria-describedby="phoneHelp" placeholder=" (00) 0000 0000">
+                                  </div>
+                                  <div class="form-group text-center mt-2 mb-0">
+                                      <div class="form-check pl-md-2">
+                                          <input data-ic-form-field="terms" id="terms-check-06" name="terms-check-06" type="checkbox" checked="" class="form-check-input mc-terms-box">
+                                          <label class="form-check-label mc-terms" for="terms-check-06">He leído y acepto las <a href="https://megacableplanes.mx/s/megacable/politicas-privacidad.html" target="_blank" class="gtm-form-popup-politicas" onclick="return onLinkClick(this, event);" data-ic-link-disabled="" style="">políticas de privacidad.</a></label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group text-center mb-0">
+                                      <button type="submit" class="btn btn-orange w-100 gtm-form-popup-submit" data-ic-button-disabled="" style="" id="form_c2c_0_0">Solicitar Llamada</button>
+                                  </div>
+                              </form>	
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <a href="/">
+              <img class="logo mw-100" src="src/img/header/logo-megacable-b.svg" alt="">
+          </a>
+          <!-- Button trigger modal -->
+          <a type="button" class="btn" data-toggle="modal" data-target="#exampleModalMarker">
+              <img class="mw-100" src="src/img/header/marker.svg" alt="">
+          </a>
+          
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalMarker" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                      <div class="modal-header border-bottom-0">
+                          <button type="button" class="close x-button" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                          <div class="dhx-w100 pb-4 px-4 text-center mc-form-container mc-pop-form mt-3">
+                              <h1 class="mc-text-blue text center">CONSULTA TU COBERTURA</h1>
+                              <h3 class="mc-text-blue text-center mb-1 mt-4">
+                                  TV INTERACTIVA + TELEFONÍA FIJA A UN PRECIO INCREÍBLE
+                              </h3>
+                              </p>
+                              <form action="" method="post" class="dhx-w75 mc-form form-box m-auto" id="form_c2c_0" data-ic-form="form_c2c_0" novalidate="novalidate">
+                                  <div class="form-group mb-4">
+                                      <label class="pop-label mc-text-blue mb-0"><strong>Ingresa tu número de teléfono</strong></label>
+                                      <small id="phoneHelp" class="pop-aclarations mc-text-blue mc-aclarations d-block text-center mb-2">Si es celular sin 044 o 045.</small>
+                                      <input type="tel" data-ic-form-field="phone" id="phone-input-popup" name="phone-input" class="input form-control" aria-describedby="phoneHelp" placeholder=" (00) 0000 0000">
+                                  </div>
+                                  <div class="form-group text-center mt-2 mb-0">
+                                      <div class="form-check pl-md-2">
+                                          <input data-ic-form-field="terms" id="terms-check-06" name="terms-check-06" type="checkbox" checked="" class="form-check-input mc-terms-box">
+                                          <label class="form-check-label mc-terms" for="terms-check-06">He leído y acepto las <a href="https://megacableplanes.mx/s/megacable/politicas-privacidad.html" target="_blank" class="gtm-form-popup-politicas" onclick="return onLinkClick(this, event);" data-ic-link-disabled="" style="">políticas de privacidad.</a></label>
+                                      </div>
+                                  </div>
+                                  <div class="form-group text-center mb-0">
+                                      <button type="submit" class="btn btn-orange w-100 gtm-form-popup-submit" data-ic-button-disabled="" style="" id="form_c2c_0_0">Solicitar Llamada</button>
+                                  </div>
+                              </form>	
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
     <main>
         <div class="bg-ups">
             <div class="container d-flex flex-direction-column justify-content-center align-items-end pt-5 text-white">
@@ -38,39 +145,39 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container pt-5">
             <p class="text-center text-dark">
                 Sabemos que la tecnología no siempre está de nuestro lado y los <b class="letter-blue">inconvenientes suceden. Por ello, ponemos a tu 
                     disposición nuestros canales de Servicio al Cliente para ayudarte</b> a resolver aquellos fallos o dudas que tengas 
                 sobre:
             </p>
         </div>
-        <div class="container d-lg-flex flex-direction-column justify-content-between align-items-center text-center">
+        <div class="container d-lg-flex flex-direction-column justify-content-between align-items-center text-center pb-5">
             <a class="text-dark" href="">
-                <img src="/src/img/bg-ups/consulta.svg" alt="">
+                <img src="src/img/bg-ups/consulta.svg" alt="">
                 <p>Consulta de saldo</p>
             </a>
             <a class="text-dark" href="">
-                <img src="/src/img/bg-ups/soporte-sugerencias.svg" alt="">
+                <img src="src/img/bg-ups/soporte-sugerencias.svg" alt="">
                 <p>Soporte Técnico Telefonía</p>
             </a>
             <a class="text-dark" href="">
-                <img src="/src/img/bg-ups/quejas.svg" alt="">
+                <img src="src/img/bg-ups/quejas.svg" alt="">
                 <p>Quejas y sugerencias</p>
             </a>
             <a class="text-dark" href="">
-                <img src="/src/img/bg-ups/wifi.svg" alt="">
+                <img src="src/img/bg-ups/wifi.svg" alt="">
                 <p>Soporte Técnico Internet</p>
             </a>
             <a class="text-dark" href="">
-                <img src="/src/img/bg-ups/monitor.svg" alt="">
+                <img src="src/img/bg-ups/monitor.svg" alt="">
                 <p>Soporte Técnico Televisión</p>
             </a>
         </div>
         <ul class="nav nav-blue justify-content-center align-items-center pt-2 pb-2">
             <li class="nav-item">
               <a class="nav-link active" href="#">
-                  <img src="/src/img/bg-ups/correo.svg" alt="">
+                  <img src="src/img/bg-ups/correo.svg" alt="">
               </a>
             </li>
             <li class="nav-item">
@@ -78,7 +185,7 @@
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <img src="/src/img/bg-ups/call.svg" alt="">
+                    <img src="src/img/bg-ups/call.svg" alt="">
                 </a>
             </li>
             <li class="nav-item">
@@ -95,7 +202,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-grey">
                 <div class="container">
                     <a class="navbar-brand" href="#">
-                        <img class="logo mw-100" src="/src/img/header/logo-megacable-b.svg" alt="">
+                        <img class="logo mw-100" src="src/img/header/logo-megacable-b.svg" alt="">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                       <span class="navbar-toggler-icon"></span>
@@ -141,7 +248,10 @@
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-
+    <!-- ChatBotJS -->
+    <script type="text/javascript" src="js/chat.js"></script>
+    <script type="text/javascript" src="js/convform.js"></script>
+    <!-- ChatBotJS -->
     <!-- Option 2: Separate Popper and Bootstrap JS -->
     <!--
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

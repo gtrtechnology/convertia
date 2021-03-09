@@ -9,12 +9,12 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="/css/general.css">
-    <link rel="stylesheet" href="/css/header-footer.css">
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/ups.css">
-    <link rel="stylesheet" href="/css/contrata.css">
-    <link rel="stylesheet" href="/css//convform.css">
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/ups.css">
+    <link rel="stylesheet" href="css/contrata.css">
+    <link rel="stylesheet" href="css/convform.css">
   </head>
   <body>
       <!-- Cahat-bot -->
@@ -80,7 +80,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group text-center mb-0">
-                                        <button type="submit" class="btn btn-success w-100 gtm-form-popup-submit" data-ic-button-disabled="" style="" id="form_c2c_0_0">Solicitar Llamada</button>
+                                        <button type="submit" class="btn btn-orange w-100 gtm-form-popup-submit" data-ic-button-disabled="" style="" id="form_c2c_0_0">Solicitar Llamada</button>
                                     </div>
                                 </form>	
                             </div>
@@ -125,7 +125,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group text-center mb-0">
-                                        <button type="submit" class="btn btn-success w-100 gtm-form-popup-submit" data-ic-button-disabled="" style="" id="form_c2c_0_0">Solicitar Llamada</button>
+                                        <button type="submit" class="btn btn-orange w-100 gtm-form-popup-submit" data-ic-button-disabled="" style="" id="form_c2c_0_0">Solicitar Llamada</button>
                                     </div>
                                 </form>	
                             </div>
@@ -136,9 +136,9 @@
         </div>
     </header>
     <main>
-        <div class="bg-jump">
-            <div class="container d-md-flex flex-direction-row pt-5">
-                <div class="p-0 col d-flex align-items-end">
+        <div class="bg-jump h-100">
+            <div class="container d-md-flex flex-direction-row pt-md-5 pt-0">
+                <div class="p-0 col d-flex align-items-md-end align-items-start">
                     <div class="m-5">
                         <h1 class="brand">Internet INIGUALABLE</h1>
                         <h1 class="brand">TV Interactiva + Telefonía Fija</h1>
@@ -146,7 +146,7 @@
                         <a href="./contrata.html" type="button" class="btn btn-contrata">LO QUIERO</a>
                     </div>
                 </div>
-                <div class="d-none d-lg-block col align-self-start">
+                <div class="col pb-md-0 pb-5">
                     <div class="form-container style-card align-items-end">
                         <h3 class="header-card mc-form-title mc-bg-blue mc-text-white text-center p-3 mb-0"> <span><strong>¡Contrata ahora!</strong></span>
                         </h3>
@@ -156,7 +156,7 @@
                             <form action="" method="post" class="tp-form form-box m-auto" id="form_c2c_0" data-ic-form="form_c2c_0" novalidate="novalidate">
                                 <div class="form-group mb-2"> <small id="phoneHelp" class="mc-text-blue tp-aclarations d-block text-center mb-1">Si es celular sin
                                         el 044 o 045.</small> <input type="tel" data-ic-form-field="phone" id="phone-input" name="phone-input" class="input form-control" aria-describedby="phoneHelp" placeholder="(00) 0000 0000"> </div>
-                                <div class="form-group text-center mb-0"> <button type="submit" class="btn btn-success w-100 gtm-form-principal-submit" data-ic-button-disabled="" style="" id="form_c2c_0_0">Llámenme</button> </div>
+                                <div class="form-group text-center mb-0"> <button type="submit" class="btn btn-orange w-100 gtm-form-principal-submit" data-ic-button-disabled="" style="" id="form_c2c_0_0">Llámenme</button> </div>
                                 <div class="form-group text-center mt-2 mb-0">
                                     <div class="form-check pl-md-2"> <input data-ic-form-field="terms" id="terms-check-06" name="terms-check-06" type="checkbox" checked="" class="form-check-input tp-terms-box"> <label class="form-check-label tp-terms" for="terms-check-06">He leído y acepto las
                                         <a href="https://megacableplanes.mx/s/megacable/legales.html#politicas-privacidad" target="_blank" class="gtm-form-principal-politicas" onclick="return onLinkClick(this, event);" data-ic-link-disabled="" style="">políticas de privacidad.</a></label> 
@@ -183,7 +183,7 @@
                     <p>+ 80 Canales + 50 Canales HD</p>
                 </div>
                 <div>
-                    <a class="btn" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <a class="btn shadow bg-white btn-position" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
                         <img class="more" src="/src/img/bg-contrata-hoy/plus.svg" alt="">
                     </a>
                 </div>
@@ -192,8 +192,13 @@
                 </div>
             </div>
             <div class="collapse" id="collapseExample">
-                <div class="card card-body">
-                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                <div class="card border-0 shadow card-body">
+                    <div class="d-flex align-items-center">
+                        <img src="src/img/loquiero/wifi.svg" alt="">
+                        <p class="ml-2">Conexión a Internet</p>
+                        <img class="ml-5" src="src/img/loquiero/fon.svg" alt="">
+                        <p class="ml-2">Llamadas ilimitadas</p>
+                    </div>
                 </div>
             </div>
             <div class="shadow p-3 mt-3 bg-white rounded d-flex flex-direction-row justify-content-between align-items-center">
@@ -276,8 +281,8 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <!-- ChatBotJS -->
-    <script type="text/javascript" src="/js/chat.js"></script>
-    <script type="text/javascript" src="/js/convform.js"></script>
+    <script type="text/javascript" src="js/chat.js"></script>
+    <script type="text/javascript" src="js/convform.js"></script>
     <!-- ChatBotJS -->
 
     <!-- Option 2: Separate Popper and Bootstrap JS -->
